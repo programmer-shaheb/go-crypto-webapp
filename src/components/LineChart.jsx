@@ -28,8 +28,6 @@ const LineChart = ({ coinHistory, currentPrice, coinName }) => {
     new Date(item.timestamp).toLocaleDateString()
   );
 
-  console.log(coinPrice);
-  console.log(coinTimestamp);
 
   const data = {
     labels: coinTimestamp,

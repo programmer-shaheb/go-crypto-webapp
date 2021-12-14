@@ -11,7 +11,7 @@ const Exchanges = () => {
   const { data, isFetching } = useGetCryptoExchangesQuery();
   const exchangesList = data?.data?.exchanges;
 
-if(isFetching) return <Spin/>
+if(isFetching) return <div className="loader" ><Spin/></div> 
 
   return (
     <>

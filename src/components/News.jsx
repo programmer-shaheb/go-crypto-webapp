@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Select, Typography, Row, Col, Avatar, Card, Spin } from "antd";
 import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
 import moment from "moment";
@@ -18,7 +18,7 @@ const News = ({ simplified }) => {
   });
 
 
-  if (isFetching) return <Spin />;
+  if (isFetching) return <div className="loader" ><Spin size="large" /></div>;
 
   return (
     <Row gutter={[24, 24]}>

@@ -19,7 +19,7 @@ const Cryptocurrencies = ({ simplified }) => {
     setCryptos(filteredData);
   }, [cryptosList, searchCrypto]);
 
-  if (isFetching) return <Spin />;
+  if (isFetching) return <div className="loader" ><Spin/></div>;
 
   return (
     <>

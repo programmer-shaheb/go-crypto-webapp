@@ -12,7 +12,7 @@ const Homepage = () => {
   console.log(data);
   const globalStats = data?.data?.stats;
 
-  if (isFetching) return <Spin />;
+  if (isFetching) return <div className="loader" ><Spin/></div>;
 
   return (
     <>

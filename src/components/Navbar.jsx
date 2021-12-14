@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <div className="nav-container">
       <div className="logo-container">
-        <Avatar size="large" />
+        <Avatar src="https://raw.githubusercontent.com/adrianhajdin/project_cryptoverse/80e29f1b53658370e40ff733c0e85ed4ea794239/src/images/cryptocurrency.png" size="large" />
         <Typography.Title level={2} className="logo">
           <Link to="/">Go Crypto</Link>
         </Typography.Title>
